@@ -1,5 +1,4 @@
 import style from "./Profile.module.css";
-console.log(style);
 
 export default function Profile({
   name,
