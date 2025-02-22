@@ -1,0 +1,55 @@
+.card {
+  margin: 20px auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.userInfo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  border-radius: 50%;
+  background-color: black;
+  width: 200px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.tag,
+.location {
+  font-size: 24px;
+  color: gray;
+}
+
+.statsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid #555;
+}
+
+.statsItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 10px;
+}
+
+.statsListItems:nth-child(2) {
+  border-left: 1px solid #555;
+  border-right: 1px solid #555;
+}
+
+.statsProperty {
+  font-size: 20px;
+}
+
+.statsValue {
+  font-weight: bold;
+}

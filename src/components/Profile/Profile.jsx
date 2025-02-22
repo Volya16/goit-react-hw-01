@@ -1,4 +1,5 @@
-// import "./Profile.module.css";
+import style from "./Profile.module.css";
+console.log(style);
 
 export default function Profile({
   name,
@@ -8,27 +9,29 @@ export default function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div className="style.card">
-      <div>
-        <img src={image} alt={`Avatar of ${name}`} />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+    <div className={style.card}>
+      <div className={style.userInfo}>
+        <img className={style.img} src={image} alt={`Avatar of ${name}`} />
+        <p className={style.name}>{name}</p>
+        <p className={style.tag}>@{tag}</p>
+        <p className={style.location}>{location}</p>
       </div>
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{followers}</span>
+      <ul className={style.statsList}>
+        <li className={style.statsItems}>
+          <span className={style.statsProperty}>Followers</span>
+          <span className={style.statsValue}>{followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>{views}</span>
+        <li className={style.statsItems}>
+          <span className={style.statsProperty}>Views</span>
+          <span className={style.statsValue}>{views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>{likes}</span>
+        <li className={style.statsItems}>
+          <span className={style.statsProperty}>Likes</span>
+          <span className={style.statsValue}>{likes}</span>
         </li>
       </ul>
     </div>
   );
 }
+
+// className={style.}
