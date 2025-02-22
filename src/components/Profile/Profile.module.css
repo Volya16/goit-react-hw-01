@@ -2,6 +2,7 @@
   margin: 20px auto;
   border: 2px solid black;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .userInfo {
@@ -15,23 +16,26 @@
   border-radius: 50%;
   background-color: black;
   width: 200px;
+  margin-bottom: 16px;
 }
 
 .name {
   font-size: 28px;
   font-weight: bold;
+  margin-bottom: 4px;
 }
 
 .tag,
 .location {
   font-size: 24px;
   color: gray;
+  margin-bottom: 4px;
 }
 
 .statsList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border-top: 1px solid #555;
+  border-top: 1px solid black;
 }
 
 .statsItems {
@@ -39,11 +43,13 @@
   flex-direction: column;
   align-items: center;
   padding: 16px 10px;
+  background-color: lightgray;
+  gap: 4px;
 }
 
-.statsListItems:nth-child(2) {
-  border-left: 1px solid #555;
-  border-right: 1px solid #555;
+.statsItems:nth-child(2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .statsProperty {
