@@ -1,0 +1,14 @@
+.td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 4px;
+}
+
+.tr:nth-child(2n) {
+  background-color: #b0b0b0;
+}
+
+.td:nth-child(1)::first-letter {
+  text-transform: uppercase;
+}
