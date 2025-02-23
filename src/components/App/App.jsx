@@ -1,9 +1,10 @@
-// import { useState } from "react";
+import Profile from "../Profile/Profile";
+import FriendList from "../FriendList/FriendList";
 
 import "./App.module.css";
 
-import userData from "../../userData.json";
-import Profile from "../Profile/Profile";
+import userData from "../../data/userData.json";
+import friends from "../../data/friends.json";
 
 export default function App() {
   return (
@@ -15,6 +16,11 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <hr />
+      <>
+        <FriendList friends={friends} />
+      </>
+      <hr />
     </div>
   );
 }
